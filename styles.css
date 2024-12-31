@@ -1,0 +1,183 @@
+/* Reset základních stylů */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Tmavý motiv */
+body {
+    background-color: #121212;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    line-height: 1.6;
+}
+
+/* Banner */
+.banner {
+    background-color: #1e1e1e;
+    color: #a1e06b;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.banner p {
+    margin: 0;
+}
+
+.banner a {
+    color: #88cc55;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.banner a:hover {
+    text-decoration: underline;
+}
+
+/* Hlavička */
+header {
+    text-align: center;
+    margin-top: 50px;
+}
+
+header .logo img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 4rem;
+    color: #a1e06b; /* Světlá zelená */
+}
+
+header p {
+    font-size: 1.3rem;
+    color: #ddd;
+}
+
+/* Sekce informací o aplikaci */
+.app-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.app-info .left {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.app-info h2 {
+    font-size: 3rem;
+    color: #a1e06b;
+    margin-bottom: 20px;
+}
+
+.app-info p {
+    font-size: 1.3rem;
+    color: #ddd;
+    margin-bottom: 30px;
+}
+
+.app-info .buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.app-info .buttons button {
+    background-color: #a1e06b;
+    color: black;
+    border: none;
+    padding: 15px 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.app-info .buttons button:hover {
+    background-color: #88cc55;
+}
+
+/* Pravá část s obrázkem */
+.app-info .right {
+    flex: 1;
+    text-align: center;
+}
+
+.app-info .right img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Změna obrázku na hover */
+.app-info .right img:hover {
+    transform: scale(1.05);
+}
+
+/* Sekce funkcí */
+.features {
+    margin: 50px auto;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2.5rem;
+    color: #a1e06b;
+    margin-bottom: 30px;
+}
+
+.feature-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.feature-cards .card {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.feature-cards .card:hover {
+    transform: translateY(-10px);
+    background-color: #2c2c2c;
+}
+
+.feature-cards .card h3 {
+    font-size: 1.6rem;
+    color: #a1e06b;
+    margin-bottom: 10px;
+}
+
+.feature-cards .card p {
+    font-size: 1.1rem;
+    color: #ddd;
+}
+
+/* Zápatí */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1d1d1d;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: #bbb;
+}

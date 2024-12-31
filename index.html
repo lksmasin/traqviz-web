@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trackifly - Aplikace pro hudební statistiky</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="banner">
+        <p>Zapoj se do Alfa programu! <a href="https://forms.gle/D9fkBeVC7Y1TnAcg8" target="_blank"> Přihlásit se zde</a></p>
+    </div>
+
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="">
+        </div>
+        <h1>Trackifly</h1>
+        <p>Objevuj své hudební statistiky ze Spotify.</p>
+    </header>
+
+    <section class="app-info">
+        <div class="left">
+            <h2>Co dělá Trackifly?</h2>
+            <p>Trackifly je aplikace, která ti poskytne podrobný přehled o tvých hudebních preferencích a statistikách ze Spotify. S její pomocí zjistíš, jakou hudbu posloucháš nejvíce a jaký je tvůj hudební vkus.</p>
+            <div class="buttons">
+                <button onclick="openApp()">Otevřít webovou aplikaci</button>
+                <button onclick="downloadApp()">Zobrazit na GitHubu</button>
+            </div>
+        </div>
+        <div class="right">
+            <img id="app-screenshot" src="./screen1.png" alt="Screenshot aplikace" onmouseover="changeImage(true)" onmouseout="changeImage(false)">
+        </div>
+    </section>
+
+    <section class="features">
+        <h2>Funkce aplikace</h2>
+        <div class="feature-cards">
+            <div class="card">
+                <h3>Podrobná analýza hudby</h3>
+                <p>Sleduj, jakou hudbu posloucháš nejvíce v přehledném zobrazení.</p>
+            </div>
+            <div class="card">
+                <h3>Top tracky a umělci</h3>
+                <p>Zjisti, kteří umělci a skladby tvoří tvou playlistovou historii.</p>
+            </div>
+            <div class="card">
+                <h3>Sdílení s známími</h3>
+                <p>Pochlub tím co posloucháš se a sdílej své statistiky s blízkými.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Trackifly. All images are copyrighted by their respective copyright owners. We are not affiliated with Spotify in any way.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
