@@ -93,8 +93,9 @@ header p {
     gap: 15px;
 }
 
+/* Styl tlačítek */
 .app-info .buttons button {
-    background-color: #a1e06b;
+    background-color: #a1e06b; /* Primární tlačítko - světlá zelená */
     color: black;
     border: none;
     padding: 15px 25px;
@@ -105,8 +106,19 @@ header p {
 }
 
 .app-info .buttons button:hover {
-    background-color: #88cc55;
+    background-color: #88cc55; /* Světlejší odstín na hover */
 }
+
+/* Sekundární tlačítko (GitHub) */
+.app-info .buttons button:nth-child(2) {
+    background-color: #555; /* Šedá barva */
+    color: white; /* Bílý text pro kontrast */
+}
+
+.app-info .buttons button:nth-child(2):hover {
+    background-color: #777; /* Světlejší šedá na hover */
+}
+
 
 /* Pravá část s obrázkem */
 .app-info .right {
@@ -180,4 +192,109 @@ footer {
 footer p {
     font-size: 0.9rem;
     color: #bbb;
+}
+
+/* Responzivní návrh */
+@media (max-width: 768px) {
+    /* Banner */
+    .banner p {
+        font-size: 1rem; /* Mírně větší text */
+    }
+
+    /* Hlavička */
+    header h1 {
+        font-size: 3rem; /* Zvýšení velikosti textu */
+    }
+
+    header p {
+        font-size: 1.2rem;
+    }
+
+    header .logo img {
+        width: 100px; /* Zachování výrazného loga */
+    }
+
+    /* Sekce informací o aplikaci */
+    .app-info {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .app-info .left {
+        margin-right: 0;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .app-info h2 {
+        font-size: 2.5rem; /* Zvýšení velikosti nadpisu */
+    }
+
+    .app-info p {
+        font-size: 1.2rem; /* Zvýšení velikosti textu */
+    }
+
+    .app-info .buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .app-info .buttons button {
+        width: auto; /* Tlačítka se nezvětšují na plnou šířku */
+        max-width: 300px; /* Maximální šířka tlačítka */
+        margin: 0 auto; /* Zarovnání na střed */
+        font-size: 1rem; /* Zvýšení velikosti textu na tlačítkách */
+        padding: 12px 20px; /* Pohodlné okraje */
+    }
+
+    .app-info .right img {
+        max-width: 350px;
+    }
+
+    /* Sekce funkcí */
+    .features h2 {
+        font-size: 2.2rem; /* Zvýšení velikosti textu */
+    }
+
+    .feature-cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .feature-cards .card {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .feature-cards .card h3 {
+        font-size: 1.8rem; /* Větší nadpisy v kartách */
+    }
+
+    .feature-cards .card p {
+        font-size: 1.2rem; /* Větší popisky */
+    }
+
+    /* Zápatí */
+    footer p {
+        font-size: 1rem; /* Zvýšení velikosti textu */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2.5rem; /* Mírně menší na velmi úzkých obrazovkách */
+    }
+
+    .app-info .right img {
+        max-width: 300px;
+    }
+
+    .app-info .buttons button {
+        font-size: 0.9rem; /* Mírně menší text na tlačítkách */
+        padding: 10px 18px;
+    }
+
+    .features h2 {
+        font-size: 2rem;
+    }
 }
