@@ -46,10 +46,23 @@ header {
     margin-top: 50px;
 }
 
+/* Logo */
 header .logo img {
-    width: 100px;
-    margin-bottom: 20px;
+    width: 200px; /* Zvýšení velikosti loga */
+    height: 200px; /* Výška odpovídající šířce */
+    border-radius: 50%; /* Kulatý tvar pomocí zaoblení */
+    object-fit: cover; /* Zachování poměru stran a správné vykrojení */
+    /*border: 3px solid #a1e06b; /* Přidání tenkého rámečku ve světlé zelené */
+    /*box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Jemný stín pod logem */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Plynulý efekt na hover */
 }
+
+/* Efekt na hover */
+header .logo img:hover {
+    transform: scale(1.1); /* Jemné zvětšení při přejetí myší */
+    /*box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7); /* Intenzivnější stín */
+}
+
 
 header h1 {
     font-size: 4rem;
@@ -211,7 +224,8 @@ footer p {
     }
 
     header .logo img {
-        width: 100px; /* Zachování výrazného loga */
+        width: 150px; /* Zachování výrazného loga */
+        height: 150px;
     }
 
     /* Sekce informací o aplikaci */
