@@ -16,7 +16,7 @@ body {
 /* Banner */
 .banner {
     background-color: #1e1e1e;
-    color: #a1e06b;
+    color: #ffff;
     text-align: center;
     padding: 10px 20px;
     font-size: 1.1rem;
@@ -31,7 +31,7 @@ body {
 }
 
 .banner a {
-    color: #88cc55;
+    color: #ffff;
     text-decoration: none;
     font-weight: bold;
 }
@@ -66,7 +66,7 @@ header .logo img:hover {
 
 header h1 {
     font-size: 4rem;
-    color: #a1e06b; /* Světlá zelená */
+    color: #ffff; /* Světlá zelená */
 }
 
 header p {
@@ -91,7 +91,7 @@ header p {
 
 .app-info h2 {
     font-size: 3rem;
-    color: #a1e06b;
+    color: #ffff;
     margin-bottom: 20px;
 }
 
@@ -108,7 +108,7 @@ header p {
 
 /* Styl tlačítek */
 .app-info .buttons button {
-    background-color: #a1e06b; /* Primární tlačítko - světlá zelená */
+    background-color: #ffff; /* Primární tlačítko - světlá zelená */
     color: black;
     border: none;
     padding: 15px 25px;
@@ -119,7 +119,7 @@ header p {
 }
 
 .app-info .buttons button:hover {
-    background-color: #88cc55; /* Světlejší odstín na hover */
+    background-color: #c7c7c7; /* Světlejší odstín na hover */
 }
 
 /* Sekundární tlačítko (GitHub) */
@@ -160,7 +160,7 @@ header p {
 
 .features h2 {
     font-size: 2.5rem;
-    color: #a1e06b;
+    color: #ffff;
     margin-bottom: 30px;
 }
 
@@ -185,7 +185,7 @@ header p {
 
 .feature-cards .card h3 {
     font-size: 1.6rem;
-    color: #a1e06b;
+    color: #ffff;
     margin-bottom: 10px;
 }
 
