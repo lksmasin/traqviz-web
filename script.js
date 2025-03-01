@@ -1,11 +1,11 @@
 // Funkce pro otevření aplikace
 function openApp() {
-    window.open("https://lksmasin.github.io/trackifly/", "_blank");  // Otevře webovou stránku aplikace
+    window.open("https://lksmasin.github.io/traqviz/", "_blank");  // Otevře webovou stránku aplikace
 }
 
 // Funkce pro stažení aplikace
 function downloadApp() {
-    window.open("https://github.com/lksmasin/trackifly", "_blank");  // Otevře Google Play Store
+    window.open("https://github.com/lksmasin/traqviz", "_blank");  // Otevře Google Play Store
 }
 
 // Funkce pro změnu obrázku při najetí myší
